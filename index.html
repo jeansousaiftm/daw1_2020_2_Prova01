@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Prova I</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mask.js"></script>
+		<script src="js/funcoes.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<form>
+				<section>
+					<h3>Prova</h3>
+					
+					<div class="row">
+						<div class="col-12 form-group">
+							<label for="nome">Nome: </label>
+							<input type="text" id="nome" name="nome" class="form-control" />
+						</div>
+						<div class="col-2 form-group">
+							<label for="tipo_pessoa">Tipo Pessoa: </label>
+							<br/>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="pf" name="tipo_pessoa" class="form-check-input" onclick="mudaTipoPessoa();" />
+								<label class="form-check-label">Física</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="pj" name="tipo_pessoa" class="form-check-input" onclick="mudaTipoPessoa();" />
+								<label class="form-check-label">Jurídica</label>
+							</div>
+						</div>
+						<div class="col-3 form-group">
+							<label for="cpf">CPF:</label>
+							<input type="text" id="cpf" name="cpf" class="form-control" />
+						</div>
+						<div class="col-3 form-group">
+							<label for="cnpj">CNPJ:</label>
+							<input type="text" id="cnpj" name="cnpj" class="form-control" />
+						</div>
+						<div class="col-2 form-group">
+							<label for="cep">CEP:</label>
+							<input type="text" id="cep" name="cep" class="form-control" />
+						</div>
+						<div class="col-3 form-group">
+							<label for="estado">Estado:</label>
+							<select id="estado" name="estado" class="form-control">
+								<option value=""></option>
+								<option value="ES">Espírito Santo</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="SP">São Paulo</option>
+							</select>
+						</div>
+						<div class="col-2 form-group">
+							<button type="submit" class="btn btn-success btn-bottom" onclick="return validar();">Enviar</button>
+							<button type="reset" class="btn btn-primary btn-bottom">Limpar</button>
+						</div>
+					</div>
+				</section>
+			</form>
+		</div>
+	</body>
+</html>
